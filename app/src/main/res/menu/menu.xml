@@ -15,17 +15,20 @@
         android:id="@+id/Call"
         android:orderInCategory="8"
         android:title="Anruf"
+        android:icon="@drawable/phone"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="9"
         android:title="Mail ins Studio"
+        android:icon="@drawable/mail"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/chat"
         android:orderInCategory="9"
         android:title="Chat"
+        android:icon="@drawable/chat"
         app:showAsAction="never" />
 
 

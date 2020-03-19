@@ -14,13 +14,16 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.view.View.OnClickListener;
 
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
+
 
 public class ContactActivity extends AppCompatActivity implements OnClickListener {
 
     private Button buttonContact;
 
     private EditText textinput;
-    EditText name;
+    private EditText name;
 
     private Spinner dropdownSpinner;
 
@@ -29,14 +32,14 @@ public class ContactActivity extends AppCompatActivity implements OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_main);
-        setSupportActionBar(toolbar);
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_main);
+        //setSupportActionBar(toolbar);
 
         buttonContact = (Button) findViewById(R.id.contact);
         buttonContact.setOnClickListener(ContactActivity.this);
 
-        EditText textinput = (EditText) findViewById(R.id.input);
-        EditText name = (EditText) findViewById(R.id.name);
+        textinput = (EditText) findViewById(R.id.input);
+        name = (EditText) findViewById(R.id.name);
 
 
         Spinner dropdown = findViewById(R.id.spinner1);
@@ -101,7 +104,7 @@ public class ContactActivity extends AppCompatActivity implements OnClickListene
 
 
         public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.manu_contact, menu);
+        getMenuInflater().inflate(R.menu.menu_contact, menu);
         return true;
     }
 

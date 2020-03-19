@@ -6,27 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".ContactActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_main"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="328dp"
         android:layout_height="50dp"
         android:layout_marginStart="39dp"
+        android:layout_marginTop="125dp"
         android:layout_marginEnd="44dp"
-        android:layout_marginBottom="490dp"
+        android:layout_marginBottom="556dp"
         android:background="@android:drawable/btn_dropdown"
         android:spinnerMode="dropdown"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_main" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/input"
@@ -69,8 +64,8 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="473dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Name"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
